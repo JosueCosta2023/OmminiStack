@@ -1,0 +1,65 @@
+node e expresss
+    Metodos HTTP:
+
+    GET: busca uma informação do backend
+    POST: criar uma informação no backend
+    PUT: alterar uma informação no backend
+    DELETE: deletar uma informação no backend
+
+    TIPOS DE PARAMETROS EM ROTAS:
+    
+    QUERY PARAMS: são parametros nomeados enviados na rota apos  "?" geralmente são utilizados para (Filtros, paginação, etc)
+        '/user?name=Josue&idade=30'
+    
+    ROUTE PARAMS: são parametros utilizados para identificar recursos.
+        '/users/:id'
+    
+    REQUEST BODY: corpo da requisição, utilizado para criar ou alterar recursos.
+
+
+Qual banco de dados escolher?
+    Os bancos de dados se dividem em dois grupos.
+
+    SQL: MySQL, SQlite, PostgreSQL, Oracle, Microsoft, Sql Server, etc          -> Relacional, ideal para erps
+    NOSQL: MongoDB, CouchDB, etc                                                -> Não Relacional, pouca estrutura de relacionamento de tabelas
+    
+    vamos utilizar o SQlite
+
+    Instale o knex para configurar a conexão com o banco de dados.
+    npm install knex
+
+    Instale o banco
+    npm install sqlite3
+
+    Execute o knex
+    npx knex init
+
+    Conheca todos os comandos do knex
+    npx knex
+
+abstraindo as funcionalidade atraves do layout.
+
+Entidades:
+    ONG
+    CASOS (insident)
+
+Funcionalidades:
+    ONG FARA LOGIN
+    ONG FARA LOGOFF
+    ONG PODE SE CADASTRAR
+    ONG PODE CRIAR CASOS
+    ONG PODE DELETAR CASOS
+    ONG PODE LISTAR CASOS
+
+geral:
+    listar todos os CASOS
+    entrar em contato com ong wtt e email
+
+PARA CRIAR AS TABELAS EM NOSSO DB UTILIZAREMOS AS MIGRATIONS DO knex
+
+Criando a parte de LOGIN
+    iniciamos com o arquivos SessionController pois logins se tratam de sessoes.
+    Quando fazemos o login criamos uma sessao
+    Quando fazemos o logoff deletamos a sessao
+    
+
