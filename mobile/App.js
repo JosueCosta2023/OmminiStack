@@ -1,11 +1,8 @@
-
-import { Text, View } from 'react-native';
+import Routes from './src/routes';
 
 export default function App() {
   return (
-    <View>
-      <Text >Hellow World Josue</Text>
-    </View>
+    <Routes/>
   );
 }
 
