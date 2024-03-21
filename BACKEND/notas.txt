@@ -65,3 +65,5 @@ Criando a parte de LOGIN
 Criando os testes e validações no backend
 
     Instale as bibliotecas CELEBRATE
+    instale o jest, inicie o jeste assim:
+    npx jext --init

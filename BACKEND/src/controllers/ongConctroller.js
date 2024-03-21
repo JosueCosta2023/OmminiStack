@@ -1,5 +1,5 @@
 const connection = require('../database/connection')
-const crypto = require('crypto');
+const generateUniqueId = require('../utils/generateUniqueId')
 
 module.exports = {
     async index(request, response){
@@ -12,7 +12,7 @@ module.exports = {
     const {name, email, whatsapp, city, uf} = request.body
 
     // Criando o id aleatorio que servira como login
-    const id = crypto.randomBytes(4).toString('HEX');
+    const id = generateUniqueId()
 
     // Iniciando a conexao com o db e inserindo os dados.
     // Devemos identificar o nome da tabela, tipo de ação e os campos que queremos inserir os dados.
