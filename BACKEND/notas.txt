@@ -62,4 +62,6 @@ Criando a parte de LOGIN
     Quando fazemos o login criamos uma sessao
     Quando fazemos o logoff deletamos a sessao
     
+Criando os testes e validações no backend
 
+    Instale as bibliotecas CELEBRATE
