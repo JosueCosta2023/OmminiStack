@@ -4,8 +4,8 @@
   "description": "Be The Hero backend",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon src/index.js"
+    "test": "cross-env NODE_ENV=test jest",
+    "start": "nodemon src/server.js"
   },
   "keywords": [
     "backend",
@@ -24,6 +24,7 @@
   "dependencies": {
     "celebrate": "^15.0.3",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "crypto": "^1.0.1",
     "express": "^4.18.3",
     "knex": "^3.1.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
   }
 }

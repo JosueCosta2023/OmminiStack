@@ -1,4 +1,4 @@
-import React ,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
 import logoImg from '../../assets/logo.png'
 import './style'
@@ -20,22 +20,23 @@ export default function Incidents() {
     const [loading, setLoading] = useState(false)
 
 
-    async function loadIncidents(){
+    async function loadIncidents() {
 
         // Se o loading estiver sendo realizado então o sistema não buscara outra ate que  a trasação conclua.
-        if(loading){
+        if (loading) {
             return;
         }
 
         // Se o total de registro for maior que 0 e o numero de incidents for igual ao total, entao não faz sentido buscar mais informações.
-        if(total > 0 && incidents.length === total){
+        if (total > 0 && incidents.length === total) {
             return
         }
 
         // Altera o loading para true antes de iniciar a requisição
         setLoading(true)
+
         const response = await api.get('incidents', {
-            params: {page}
+            params: { page }
         })
 
         // Incrementar resultados
@@ -49,13 +50,13 @@ export default function Incidents() {
         setLoading(false)
     }
     // Buscando dados da api e listando
-    useEffect(()=>{
+    useEffect(() => {
         loadIncidents()
     }, [])
 
 
-    function navigateToDetail( incident){
-        navigation.navigate('Detail', {incident})
+    function navigateToDetail(incident) {
+        navigation.navigate('Detail', { incident })
     }
 
     return (
@@ -64,11 +65,11 @@ export default function Incidents() {
                 <Image source={logoImg} />
                 <Text style={style.headerText}>
                     Total de <Text style={style.headerTextBold}>
-                        { total } de {total == 1 ? 'caso' : 'casos'}
+                        {total} de {total == 1 ? 'caso' : 'casos'}
                     </Text>
                 </Text>
             </View>
-            
+
             <Text style={style.title}>Bem Vindo!</Text>
             <Text style={style.description}>
                 Escolha um dos casos abaixo e salve o dia.
@@ -89,7 +90,7 @@ export default function Incidents() {
 
                 // Desestruturação do retorno da api e seleção somente dos dados necessarios na listagem
                 // Por padrão os itens dentro de uma listagem vem nomeados como item, então alteramos para incident.
-                renderItem={({item: incident}) => (
+                renderItem={({ item: incident }) => (
                     <View style={style.incident}>
                         <Text style={style.incidentProperty}>ONG:</Text>
                         <Text style={style.incidentValue}>{incident.name}</Text>
@@ -102,10 +103,10 @@ export default function Incidents() {
                             {
                                 // Para utilização do intl na formatação dos valores em reais, vamos intalar o pacote INTL, ele garante o funcionamento em todos os dispositivos moveis. A configuração sera realizada no arquivo app.js da aplicação a fim de garantir o funcionamento em todo aplicativo.
                                 Intl.NumberFormat('pt-BR',
-                                {
-                                    style: 'currency',
-                                    currency: 'BRL'
-                                }).format(incident.value)
+                                    {
+                                        style: 'currency',
+                                        currency: 'BRL'
+                                    }).format(incident.value)
                             }
                         </Text>
                         <TouchableOpacity style={style.detailsButton} onPress={() => navigateToDetail(incident)}>

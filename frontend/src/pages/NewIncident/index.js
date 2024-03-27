@@ -58,7 +58,7 @@ export default function NewIncient() {
                         value={title}
                         onChange={e => setTitle(e.target.value)} />
                     <textarea 
-                        placeholder='Descrição' 
+                        placeholder='Descrição - min 20 max 255 caracteres.' 
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                         />
