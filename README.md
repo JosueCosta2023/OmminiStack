@@ -16,8 +16,8 @@
 
 ### Funcionalidades para o Público.
     * Ter acesso a todos os casos de todas Ong's cadastradas no sistema.
-    * Ao clicar no caso, será direcionado a uma sessão de detalhes.
-    * Na sessão de Detalhes é possivel entrar em contato com a ONG atraves de Whatsapp e Email.
+    * Ao clicar no caso, será direcionado a uma seção de detalhes.
+    * Na seção de detalhes é possivel entrar em contato com a ONG atraves de Whatsapp e Email.
 
 ## Instalação do Sistema
 
@@ -29,7 +29,7 @@
 
 ### 3- Execute o ` npm start ` no BACKEND, FRONTEND e MOBILE
 
-### Agora crie sua ong e aproveite ao maximo essas funcionalidades.
+### Agora crie sua ong e aproveite ao máximo essas funcionalidades.
 ### Código liberado para aprimoramentos, faça o FORK e me ajude a corrigir futuros BUG's e adicionar novas funções.
 
 ## Demonstração Desktop e Mobile
@@ -45,7 +45,7 @@
 - Biblioteca Web: ![React](https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=react)
 - Biblioteca de Teste: ![Supertest](https://img.shields.io/badge/Supertest-%2320232a?style=for-the-badge)
 - Framework Web: ![React Native](https://img.shields.io/badge/React_Native-%2320232a?style=for-the-badge&logo=react)  ![Express](https://img.shields.io/badge/Express-%2320232a?style=for-the-badge)
-- Franmework de Teste: ![Jest](https://img.shields.io/badge/Jest-%2320232a?style=for-the-badge)
+- Framework de Teste: ![Jest](https://img.shields.io/badge/Jest-%2320232a?style=for-the-badge)
 - Plataforma: ![Node.js](https://img.shields.io/badge/Node.js-%2343853D?style=for-the-badge&logo=node.js)
 - Ferramenta de Desenvolvimento: ![Nodemon](https://img.shields.io/badge/Nodemon-%2320232a?style=for-the-badge)  ![Insomnia](https://img.shields.io/badge/Insomnia-%2320232a?style=for-the-badge)
 - Banco de Dados: ![SQLite](https://img.shields.io/badge/SQLite-%2307405e?style=for-the-badge&logo=sqlite)
