@@ -35,7 +35,7 @@
 ## Demonstração Desktop e Mobile
 
 <div style="display:flex">
-<img src="./frontend/src/assets/bethehero.gif" alt="Descrição da imagem" width="60%">
+<img src="./frontend/src/assets/bethehero.gif" alt="Descrição da imagem" width="70%">
 <img src="./frontend/src/assets/mobileONG.gif" alt="Descrição da imagem" height="300">
 </div>
 
