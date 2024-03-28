@@ -36,7 +36,7 @@
 
 <div style="display:flex">
 <img src="./frontend/src/assets/bethehero.gif" alt="Descrição da imagem" width="60%">
-<img src="./frontend/src/assets/mobileONG.gif" alt="Descrição da imagem" width="300">
+<img src="./frontend/src/assets/mobileONG.gif" alt="Descrição da imagem" height="300">
 </div>
 
 ## Tecnologias Utilizadas no desenvolvimento.
